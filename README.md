@@ -1,16 +1,20 @@
 # Economical impact of Public behaviour during Covid-19 
 
-This repository contains a Python project template.
+This repository contains a Python project for exploring the Covid-related data and creating visualizations on different economical brand categories.
 
 ## Project title
+Economical Impact of Public Behavior on different brand categories in COVID-19
 
 ## Project statement
+The goal of this project is to study the impact of covid on public behavior and how that affects economic activity across different sectors. More specifically, the study will analyze how public behaviour correlates with covid related variables such as lockdown measures, policies etc.
+The project will define public behavior using variables such as google searches, restaurant visits, vaccine acceptance etc. 
+
 
 ## Project team members
 
-Team lead:
+Team lead: Navjot Kaur
 
-Mentor:
+Mentor: Yee Fay
 
 Documentation:
 
