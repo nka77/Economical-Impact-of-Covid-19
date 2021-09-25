@@ -7,7 +7,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 
-def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str) -> None:
+def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str):
     """
     Parameters
     ----------
@@ -21,11 +21,17 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str) -
         None
     """
     
-    plot_dict = {'box': px.box,'violin': px.violin, 'scatter': px.scatter, 'line':px.line}
-        
+    #plot_dict = {'box': px.box,'violin': px.violin, 'scatter': px.scatter, 'line':px.line}
+    plot_dict = {'scatter': px.scatter}
+
     try:
         # Initialize function
-        fig = plot_dict[graph_type](region_df, 
+        fig = px.scatter(data_frame=region_df[region_df.Month == "Jun"], y="Gasoline Stations", x="Day")
+
+
+
+
+        '''fig = plot_dict[graph_type](region_df, 
                                     x=dimension1, 
                                     y=dimension2, 
                                     color = "Geography",
@@ -33,7 +39,7 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str) -
         # Format figure 
         title_string = f'Chart: {graph_type} plot of {dimension1} and {dimension2} by Geography'
         fig.update_layout(title = title_string)
-        fig.update_xaxes(tickangle=-45)
+        fig.update_xaxes(tickangle=-45)'''
         return fig
     
     except KeyError:
@@ -45,7 +51,7 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str) -
 # ----------------------------------------------------------------------------------#
 # Read data
 
-url = 'https://raw.githubusercontent.com/Vancouver-Datajam/dashboard-workshop-dash/main/data/delinquency_mortgage_population_2021_2020.csv'
+url = 'Top_Categories_6months_daily_visits.csv'
 data_pop_del_mort_df = pd.read_csv(url, index_col=0)
 
 # ----------------------------------------------------------------------------------#
@@ -68,9 +74,9 @@ app.layout = html.Div([
             html.H1("Different kinds of plots"),
             dcc.Dropdown(
                         id='graph-type',
-                        options=[{'label': 'Violin plot', 'value': 'violin'},
-                                {'label': 'Box plot', 'value': 'box'}],
-                        value= 'box'),
+                        options=[{'label': 'Scatter plot', 'value': 'scatter'}]
+                                ,
+                        value= 'scatter'),
             dcc.Graph(id='graph-render')
 
         
@@ -81,7 +87,7 @@ app.layout = html.Div([
     Input('graph-type', 'value'))
 def update_figure0(selected_graph):
     filtered_df = data_pop_del_mort_df
-    fig0 = graph_region(filtered_df, selected_graph, "Geography", "AverageMortgageAmount")
+    fig0 = graph_region(filtered_df, selected_graph, "Gasoline Stations", "Clothing Stores")
     return fig0
 # ----------------------------------------------------------------------------------#
 
