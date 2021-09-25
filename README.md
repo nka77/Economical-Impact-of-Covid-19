@@ -16,15 +16,17 @@ For instance, for the brand category "Health and Personal Care Stores", the belo
 
 Team lead: Navjot Kaur
 
-Mentor: Yee Fay
+Mentor: Yee Fay Lim
 
-Documentation:
+Documentation: Navjot Kaur, Yee Fay Lim
 
-Scripting:
+Data preprocessing: Yee Fay Lim
 
-Modelling: 
+Analysis and visualization: Ilyssa Summer, Navjot Kaur
 
-Sanity checking: 
+Dashboard: Mark Ladbrook
+
+Presentation: Maruf Mirzokhidov 
 
 ## Vancouver Datajam 2021 Schedule:
 
