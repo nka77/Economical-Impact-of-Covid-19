@@ -7,7 +7,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 
-def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str):
+def graph_region(region_df, graph_type: str, month: str, dimension1: str, dimension2: str):
     """
     Parameters
     ----------
@@ -39,7 +39,7 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str):
 
     try:
         # Initialize function
-        fig = px.scatter(data_frame=region_df[region_df.Month == "Jun"], y=graph_type, x="Day")
+        fig = px.scatter(data_frame=region_df[region_df.Month == month], y=graph_type, x="Day")
 
 
 
@@ -97,19 +97,28 @@ app.layout = html.Div([
               {'label':"Automotive Parts, Accessories, and Tire Stores",'value':"Automotive Parts, Accessories, and Tire Stores"},
               {'label':"Clothing Stores",'value':"Clothing Stores"},
               {'label':"Automobile Dealers",'value':"Automobile Dealers"}],
-                        value= 'Clothing Stores')
-    ,
+                        value= 'Clothing Stores'),
+dcc.Dropdown(
+                        id='month',
+                        options=[{'label':"Mar",'value':"Mar"},
+              {'label':"Apr",'value':"Apr"},
+              {'label':"May",'value':"May"},
+              {'label':"Jun",'value':"Jun"},
+              {'label':"Jul",'value':"Jul"},
+              {'label':"Aug",'value':"Aug"}],
+                        value= 'Mar'),
             dcc.Graph(id='graph-render')
 
-        
+
 ])
 
 @app.callback(
     Output('graph-render', 'figure'),
-    Input('graph-type', 'value'))
-def update_figure0(selected_graph):
+    Input('graph-type', 'value'),
+    Input('month', 'value'))
+def update_figure0(selected_graph, month):
     filtered_df = data_pop_del_mort_df
-    fig0 = graph_region(filtered_df, selected_graph, "Gasoline Stations", "Clothing Stores")
+    fig0 = graph_region(filtered_df, selected_graph, month, "Gasoline Stations", "Clothing Stores")
     return fig0
 # ----------------------------------------------------------------------------------#
 
