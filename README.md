@@ -13,20 +13,13 @@ For instance, for the brand category "Health and Personal Care Stores", the belo
 ![alt text](https://github.com/inavjotkaur/Economical-Impact-of-Covid-19/blob/main/data/Health%20and%20Personal%20Care%20Stores.png)
 
 ## Project team members
-
-Team lead: Navjot Kaur
-
-Mentor: Yee Fay Lim
-
-Documentation: Navjot Kaur, Yee Fay Lim
-
-Data preprocessing: Yee Fay Lim
-
-Analysis and visualization: Ilyssa Summer, Navjot Kaur
-
-Dashboard: Mark Ladbrook
-
-Presentation: Maruf Mirzokhidov 
+Team lead: Navjot Kaur  
+Mentor: Yee Fay Lim  
+Documentation: Navjot Kaur, Yee Fay Lim  
+Data preprocessing: Yee Fay Lim  
+Analysis and visualization: Ilyssa Summer, Navjot Kaur  
+Dashboard: Mark Ladbrook  
+Presentation: Maruf Mirzokhidov  
 
 ## Vancouver Datajam 2021 Schedule:
 
