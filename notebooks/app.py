@@ -22,11 +22,24 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str):
     """
     
     #plot_dict = {'box': px.box,'violin': px.violin, 'scatter': px.scatter, 'line':px.line}
-    plot_dict = {'scatter': px.scatter}
+    plot_dict = px.scatter
+    top_brands = ["Restaurants and Other Eating Places",
+                  "Gasoline Stations",
+                  "General Merchandise Stores, including Warehouses",
+                  "Grocery Stores",
+                  "Traveler Accommodation",
+                  "Department Stores",
+                  "Building Material and Supplies Dealers",
+                  "Health and Personal Care Stores",
+                  "Other Amusement and Recreation Industries",
+                  "Sporting Goods, Hobby, and Musical Instruments",
+                  "Automotive Parts, Accessories, and Tire Stores",
+                  "Clothing Stores",
+                  "Automobile Dealers"]
 
     try:
         # Initialize function
-        fig = px.scatter(data_frame=region_df[region_df.Month == "Jun"], y="Gasoline Stations", x="Day")
+        fig = px.scatter(data_frame=region_df[region_df.Month == "Jun"], y=graph_type, x="Day")
 
 
 
@@ -52,7 +65,7 @@ def graph_region(region_df, graph_type: str, dimension1: str, dimension2: str):
 # Read data
 
 url = 'Top_Categories_6months_daily_visits.csv'
-data_pop_del_mort_df = pd.read_csv(url, index_col=0)
+data_pop_del_mort_df = pd.read_csv(url)
 
 # ----------------------------------------------------------------------------------#
 # App section        
@@ -71,12 +84,21 @@ server = app.server
 
 app.layout = html.Div([
              # This div contains a header H1, a dropdown to select the kind of plot and the plot
-            html.H1("Different kinds of plots"),
+            html.H1("Changing daily-visit patterns for top brand categories"),
             dcc.Dropdown(
                         id='graph-type',
-                        options=[{'label': 'Scatter plot', 'value': 'scatter'}]
-                                ,
-                        value= 'scatter'),
+                        options=[{'label':"Restaurants and Other Eating Places",'value':"Restaurants and Other Eating Places"},
+              {'label':"Grocery Stores",'value':"Grocery Stores"},
+              {'label':"Traveler Accommodation",'value':"Traveler Accommodation"},
+              {'label':"Department Stores",'value':"Department Stores"},
+              {'label':"Building Material and Supplies Dealers",'value':"Building Material and Supplies Dealers"},
+              {'label':"Health and Personal Care Stores",'value':"Health and Personal Care Stores"},
+              {'label':"Other Amusement and Recreation Industries",'value':"Other Amusement and Recreation Industries"},
+              {'label':"Automotive Parts, Accessories, and Tire Stores",'value':"Automotive Parts, Accessories, and Tire Stores"},
+              {'label':"Clothing Stores",'value':"Clothing Stores"},
+              {'label':"Automobile Dealers",'value':"Automobile Dealers"}],
+                        value= 'Clothing Stores')
+    ,
             dcc.Graph(id='graph-render')
 
         
