@@ -7,8 +7,10 @@ Economical Impact of Public Behavior on different brand categories in COVID-19
 
 ## Project statement
 The goal of this project is to study the impact of covid on public behavior and how that affects economic activity across different sectors. More specifically, the study will analyze how public behaviour correlates with covid related variables such as lockdown measures, policies etc.
-The project will define public behavior using variables such as google searches, restaurant visits, vaccine acceptance etc. 
 
+The project will define public behavior using variables such as google searches, restaurant visits, vaccine acceptance etc. 
+For instance, for the brand category "Health and Personal Care Stores", the below figure represents the changing visit counts for Mar 2021 to Aug 2021:
+![alt text](https://github.com/inavjotkaur/Economical-Impact-of-Covid-19/blob/main/data/Health%20and%20Personal%20Care%20Stores.png)
 
 ## Project team members
 
