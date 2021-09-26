@@ -64,7 +64,7 @@ def graph_region(region_df, graph_type: str, month: str, dimension1: str, dimens
 # ----------------------------------------------------------------------------------#
 # Read data
 
-url = 'Top_Categories_6months_daily_visits.csv'
+url = '../data/Top_Categories_6months_daily_visits.csv'
 data_pop_del_mort_df = pd.read_csv(url)
 
 # ----------------------------------------------------------------------------------#
