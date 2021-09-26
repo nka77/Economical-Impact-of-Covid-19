@@ -1,4 +1,4 @@
-# Economical impact of public behaviour during Covid-19 
+# Economic impact of public behaviour during Covid-19 
 
 This repository contains a Python project for exploring Covid-related data and creating visualizations on a range of economic activity categories.
 
