@@ -12,15 +12,14 @@ The project will define public behavior using variables such as google searches,
 For instance, for the brand category "Health and Personal Care Stores", the below figure represents the changing visit counts for Mar 2021 to Aug 2021:
 ![alt text](https://github.com/inavjotkaur/Economical-Impact-of-Covid-19/blob/main/data/Health%20and%20Personal%20Care%20Stores.png)
 
-## Project team members
-Navjot Kaur (Team lead)
-Yee Fay Lim (Mentor)
-    
+## Project team members    
 Team Members (actively involved in Data preprocessing, Analysis and visualization and getting the project up :) and running dashboard!!)
-1. Ilyssa Summer
-2. Mark Ladbrook
-3. Maruf Mirzokhidov
-4. Jenny
+1. Navjot Kaur (Team lead)
+2. Yee Fay Lim (Mentor)
+3. Ilyssa Summer
+4. Mark Ladbrook
+5. Maruf Mirzokhidov
+6. Jenny
 
 Other Contributors:
 6. Sam Simon
