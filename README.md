@@ -1,9 +1,9 @@
-# Economical impact of Public behaviour during Covid-19 
+# Economical impact of public behaviour during Covid-19 
 
-This repository contains a Python project for exploring the Covid-related data and creating visualizations on different economical brand categories.
+This repository contains a Python project for exploring Covid-related data and creating visualizations on a range of economic activity categories.
 
 ## Project title
-Economical Impact of Public Behavior on different brand categories in COVID-19
+Economical Impact of public Behavior on different brand categories in COVID-19
 
 ## Project statement
 The goal of this project is to study the impact of covid on public behavior and how that affects economic activity across different sectors. More specifically, the study will analyze how public behaviour correlates with covid related variables such as lockdown measures, policies etc.
