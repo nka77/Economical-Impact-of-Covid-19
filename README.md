@@ -15,11 +15,16 @@ For instance, for the brand category "Health and Personal Care Stores", the belo
 ## Project team members
 Team lead: Navjot Kaur  
 Mentor: Yee Fay Lim     
-Team Members (involved in Data preprocessing, Analysis and visualization and getting the project up :) and running dashboard!!)
+Team Members (actively involved in Data preprocessing, Analysis and visualization and getting the project up :) and running dashboard!!)
 1. Ilyssa Summer
 2. Mark Ladbrook
 3. Maruf Mirzokhidov
 4. Jenny
+Other Contributors:
+6. Sam Simon
+7. Steven
+8. Su
+9. Annie
 
 ## Project main deliverable
 Dashboard displaying scatterplot summarizing activity in user-selected economic sector and month for the state of California.
