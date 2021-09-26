@@ -21,6 +21,9 @@ Analysis and visualization: Ilyssa Summer, Navjot Kaur
 Dashboard: Mark Ladbrook  
 Presentation: Maruf Mirzokhidov  
 
+## Project main deliverable
+Dashboard displaying scatterplot summarizing activity in user-selected economic sector and month for the state of California.
+
 ## Vancouver Datajam 2021 Schedule:
 
 ### Main page: https://vancouverdatajam.ca/
