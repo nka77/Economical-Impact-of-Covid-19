@@ -13,8 +13,8 @@ For instance, for the brand category "Health and Personal Care Stores", the belo
 ![alt text](https://github.com/inavjotkaur/Economical-Impact-of-Covid-19/blob/main/data/Health%20and%20Personal%20Care%20Stores.png)
 
 ## Project team members
-Team lead: Navjot Kaur  
-Mentor: Yee Fay Lim 
+Navjot Kaur (Team lead)
+Yee Fay Lim (Mentor)
     
 Team Members (actively involved in Data preprocessing, Analysis and visualization and getting the project up :) and running dashboard!!)
 1. Ilyssa Summer
