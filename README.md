@@ -14,12 +14,14 @@ For instance, for the brand category "Health and Personal Care Stores", the belo
 
 ## Project team members
 Team lead: Navjot Kaur  
-Mentor: Yee Fay Lim     
+Mentor: Yee Fay Lim 
+    
 Team Members (actively involved in Data preprocessing, Analysis and visualization and getting the project up :) and running dashboard!!)
 1. Ilyssa Summer
 2. Mark Ladbrook
 3. Maruf Mirzokhidov
 4. Jenny
+
 Other Contributors:
 6. Sam Simon
 7. Steven
